@@ -28,5 +28,4 @@ jobs:
           gcloud workflows deploy myWorkflowFromGitHub \
           --location=us-central1 \
           --source=myFirstWorkflow.workflows.yaml \
-          --project=${{ secrets.GCP_PROJECT_ID }}\
-          --service-account=workflows-nakagome@kaigofika-poc01.iam.gserviceaccount.com
+          --service-account=workflows-nakagome@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com
