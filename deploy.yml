@@ -25,7 +25,7 @@ jobs:
       # workflowsのデプロイ
       - name: Use gcloud CLI
         run: |
-          gcloud workflows deploy myWorkflowFromGitHub \
+          gcloud workflows deploy fs-workflow-nakagome \
           --location=us-central1 \
           --source=myFirstWorkflow.workflows.yaml \
           --service-account=workflows-nakagome@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com
