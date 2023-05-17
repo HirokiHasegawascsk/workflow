@@ -29,4 +29,4 @@ jobs:
           --location=us-central1 \
           --source=myFirstWorkflow.workflows.yaml \
           --project=${{ secrets.GCP_PROJECT_ID }}\
-          --service-account=sa-workflow-nakagome@kaigofika-poc01.iam.gserviceaccount.com
+          --service-account=workflows-nakagome@kaigofika-poc01.iam.gserviceaccount.com
