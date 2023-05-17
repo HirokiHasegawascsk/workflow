@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     name: Deploy Cloud Workflow
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       # リポジトリをチェックアウト
       - name: 'Checkout the repository'
